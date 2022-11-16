@@ -1,70 +1,54 @@
-import { useEffect } from 'react'
-import { Route, BrowserRouter as Router } from 'react-router-dom'
 
-import PageRender from './routes/PageRender'
-import PrivateRouter from './routes/PrivateRouter'
-
-import Login from './pages/login'
-import Register from './pages/register'
-import Forgot from './pages/forgotPassword'
-import Reset from './pages/reset'
-
-import Header from './components/Header'
-import NotFound from './components/NotFound'
-import Alert from './components/Alert'
-import { useSelector, useDispatch } from 'react-redux'
-import { refreshToken } from './redux/actions/authAction'
-import Home from './pages/home'
-import ProductModal from './components/ProductModal'
-import { getPosts } from './redux/actions/productAction'
-import Body from './Body'
+import './App.css'
+import Header from './components/header/Header'
+import { BrowserRouter as Router,Switch,Route} from "react-router-dom";
+import Pages from './pages/Pages';
+import Fldata from './components/flashdeal/Fldata';
+import { useState } from 'react';
+import Cart from './components/cart/Cart';
+import Shopdata from './components/shop/Shopdata';
+import Footer from './components/footer/Footer'
 
 function App() {
-  const { auth, status } = useSelector((state) => state)
-  const { isLogged } = auth
 
-  const dispatch = useDispatch()
+  const {productItems} = Fldata
+  const {shopItems} = Shopdata
 
-  useEffect(() => {
-    dispatch(refreshToken())
-  }, [dispatch])
+  const [cartItem, setCardItem] = useState([])
 
-  useEffect(() => {
-    if (auth.token) {
-      dispatch(getPosts(auth.token))
+  const addToCart = (product) =>{
+    const productExit = cartItem.find((item) => item.id === product.id)
+
+    if(productExit){
+      setCardItem(cartItem.map((item) => (item.id === product.id ? {...productExit, qty:productExit.qty + 1} : item)))
+    }else {
+      setCardItem([...cartItem, {...product, qty: 1}])
     }
-  }, [dispatch, auth.token])
+  }
 
+  const decreaseQty = (product) =>{
+    const productExit = cartItem.find((item) => item.id === product.id)
+    if (productExit.qty === 1 ){
+      setCardItem (cartItem.filter((item)=> item.id !== product.id))
+    }else {
+      setCardItem(cartItem.map((item) => (item.id === product.id? {...productExit, qty: productExit.qty - 1} : item)))
+    }
+  }
   return (
-    <Router>
-      <Alert />
-      <div className="App">
-        {auth.token && <Header />}
-
-        {status && <ProductModal />}
-        <Body />
-
-        <Route exact path="/" component={auth.token ? Home : Login} />
-        <Route
-          exact
-          path="/register"
-          component={isLogged ? NotFound : Register}
-        />
-        <Route
-          exact
-          path="/forgot_password"
-          component={isLogged ? NotFound : Forgot}
-        />
-
-        <Route
-          exact
-          path="/reset/:token"
-          component={isLogged ? NotFound : Reset}
-        />
-        <PrivateRouter exact path="/:page" component={PageRender} />
-        <PrivateRouter exact path="/:page/:id" component={PageRender} />
-      </div>
+    <>
+      <Router>
+        <Header cartItem={cartItem}/>
+        <Switch>
+          <Route path='/' exact>
+            <Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems}/>
+          </Route>
+          <Route path='/cart' exact>
+            <Cart cartItem={cartItem} addToCart={addToCart} decreaseQty={decreaseQty} />
+          </Route>
+        </Switch>
+        <Footer />
     </Router>
+    </>
   )
 }
 
