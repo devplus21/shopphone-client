@@ -1,0 +1,185 @@
+* {
+  font-family: 'Montserrat', sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1.4;
+  font-size: 14px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 9;
+  box-shadow: 0 2px 19px #ddd;
+}
+
+.header_container {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 10px;
+}
+
+.header_action {
+  display: flex;
+}
+.header_action .action_search {
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_action .action_search .form_group {
+  position: relative;
+  margin-right: 25px;
+}
+.action_search .form_group input {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  font-size: 13px;
+  padding-right: 120px;
+  border: none;
+  box-shadow: none;
+  padding-left: 20px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  border: 1px solid #ededed;
+}
+.action_search .form_group .btn_search {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 3;
+  color: rgb(112, 110, 110);
+  background: #fff;
+  border: #fff;
+  box-shadow: none;
+}
+.iconRightHeaderContainer {
+  display: flex;
+}
+
+.iconRightHeader {
+  color: #27251f;
+  margin-left: 3px;
+  margin-right: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.iconRightHeaderitem {
+  width: 27px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.nav-tabs {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+a.nav {
+  text-decoration: none;
+}
+.nav-tabs .nav {
+  height: 100%;
+  color: #000;
+  flex: 0 0 auto;
+  background-repeat: no-repeat;
+  padding: 16px 20px;
+  text-align: center;
+  font-family: RazerF5;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 16px;
+  opacity: 0.3;
+  border-radius: 15px;
+  will-change: opacity, background-color, color;
+  transition: opacity 0.3s, background-color 0.3s, color, 0.1s;
+}
+.nav.active {
+  opacity: 1;
+}
+.nav-tabs .arrow {
+  opacity: 1;
+  background-position: center;
+  width: 40px;
+  height: 48px;
+  max-width: 40px;
+  padding: 0;
+  background-size: 9px 18px;
+}
+
+.nav.disabled {
+  opacity: 0.3;
+}
+.nav.disabled:hover {
+  opacity: 0.3;
+  cursor: default;
+  background-color: transparent;
+}
+
+.nav-tabs .user {
+  position: absolute;
+  right: 0;
+  flex: 0 0 auto;
+}
+.user:hover {
+  cursor: pointer;
+  background-color: #3dc128;
+}
+.user .avatar {
+  margin: 8px 15px;
+  height: 32px;
+  width: 32px;
+  background-color: #ddd;
+  border-radius: 16px;
+}
+
+.menu-all {
+  border-bottom: none !important;
+}
+
+.menu-all .ant-btn {
+  border: none;
+  box-shadow: none;
+}
+
+.menu-all .ant-btn span {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.nav-tabs-headers-menu {
+  gap: 50px;
+  margin-bottom: 15px;
+}
+.list-menu {
+  gap: 25px;
+
+  .menu-item {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    border-bottom: 3px solid white;
+
+    &:hover {
+      color: #fd9500;
+      border-bottom: 3px solid #fd9500;
+    }
+  }
+}
