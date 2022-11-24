@@ -1,0 +1,19 @@
+footer {
+    background-color: #fd9500;
+    padding: 50px 0;
+    color: #fff;
+    cursor: pointer;
+}
+footer .box {
+    margin-top: -40px;
+}
+footer .box img{
+ width: 80%;
+ height: 80%;
+ margin-top: -55px;
+}
+
+footer .img i {
+    font-size: 30px;
+    color: black;
+}
