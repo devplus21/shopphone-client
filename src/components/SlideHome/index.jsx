@@ -35,35 +35,19 @@ function SlideHome() {
             </div>
           </div>
         </div>
-        <div className="col-md-8 slider-home">
+        <div className='col-md-8 slider-home'>
           <Slider {...settings}>
             <div>
-              <img
-                src={banner01}
-                alt="First slide"
-                style={{ borderRadius: '50px' }}
-              />
+              <img src={banner01} alt='First slide' style={{ borderRadius: '50px' }} />
             </div>
             <div>
-              <img
-                src={banner02}
-                alt="Second slide"
-                style={{ borderRadius: '50px' }}
-              />
+              <img src={banner02} alt='Second slide' style={{ borderRadius: '50px' }} />
             </div>
             <div>
-              <img
-                src={banner03}
-                alt="Second slide"
-                style={{ borderRadius: '50px' }}
-              />
+              <img src={banner03} alt='Second slide' style={{ borderRadius: '50px' }} />
             </div>
             <div>
-              <img
-                src={banner04}
-                alt="Second slide"
-                style={{ borderRadius: '50px' }}
-              />
+              <img src={banner04} alt='Second slide' style={{ borderRadius: '50px' }} />
             </div>
           </Slider>
         </div>
