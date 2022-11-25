@@ -1,9 +1,9 @@
-import img01 from '../../assets/images/new_products.webp';
-import img02 from '../../assets/images/charm.webp';
-import img03 from '../../assets/images/vongtay.webp';
-import img04 from '../../assets/images/nhan.webp';
-import img05 from '../../assets/images/hoatai.webp';
-import img06 from '../../assets/images/daychuyen.webp';
+import img01 from '../../assets/images/iphone14.png';
+import img02 from '../../assets/images/sony.jpg';
+import img03 from '../../assets/images/xiaomi.jpeg';
+import img04 from '../../assets/images/nokia.jpg';
+import img05 from '../../assets/images/samsung.jpg';
+import img06 from '../../assets/images/oppo.jpg';
 
 export const dataListProducts = [
   {
@@ -15,7 +15,7 @@ export const dataListProducts = [
   {
     id: 2,
     img: img02,
-    path: '/products?cate=charm',
+    path: '/products?cate=sony',
     name: 'Sony',
   },
   {
