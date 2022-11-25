@@ -22,19 +22,16 @@ function SlideHome() {
       <div className="row">
         <div className="col-md-4 SlideHome_Right">
           <div className="ci-m66-feature-teaser-container">
-            <h2 className="ci-m66-feature-title">Polo Nam Pima cao cấp </h2>
+            <h2 className="ci-m66-feature-title">IPHONE 14 CÁC DÒNG SALE 15% </h2>
             <div className="ci-m66-feature-intro-text">
               <span className="ci-richtext ci-richtext-text-alignment-left">
                 <p>
-                  Nhắc đến sự đẳng cấp là không thể không nhắc đến dòng vải
-                  pima. Nó tạo nên chất lượng tốt nhất cho bất kỳ sản phẩm thời
-                  trang nào. Sợi vải pima dài và dày hơn sợi cotton thông thường
-                  gấp đôi nhờ công nghệ dệt tân tiến.
+                Giảm thêm 500.000đ khi thanh toán qua VNPAY - (Xem chi tiết)
                 </p>{' '}
               </span>
             </div>
             <div className="btn" style={{ padding: '17px 72px' }}>
-              TOP MOTHER'S DAY GIFTS
+              TOP CÁC ĐIỆN THOẠI BÁN CHẠY
             </div>
           </div>
         </div>
