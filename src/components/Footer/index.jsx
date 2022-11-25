@@ -18,20 +18,19 @@ const Footer = () => {
               className="logo"
               style={{ color: '#fff', fontSize: '20px', fontWeight: '900' }}
             >
-              ShopFashion
+              ITShop
             </div>
             <br />
             <p className="font">
-              Hướng đến mục tiêu mang lại niềm vui ăn mặc mới mỗi ngày cho hàng
-              triệu người tiêu dùng Việt. Hãy cùng Yolo hướng đến một cuộc sống
-              năng động, tích cực hơn.
+              Mong muốn cung cấp dịch vụ tốt nhất đến mọi người trên 
+              thị trường với giá cả và dịch vụ bảo hành tốt nhất
             </p>
           </div>
           <div className="col-md-6">
-            <h4 className="font">Nhận tin mới từ ShopFashion</h4>
+            <h4 className="font">Nhận tin mới từ ITShop</h4>
             <p className="font">
               Đăng kí ngay để nhận thông tin mới nhất về khuyến mãi, sự kiện,
-              offer... từ ShopFashion.
+              offer... từ ITShop.
             </p>
             <Input.Group compact>
               <Input
@@ -47,9 +46,9 @@ const Footer = () => {
           <div className="col-md-3">
             <h5 className="fw-bold font">GIỚI THIỆU</h5>
             <ul className="font">
-              <li>Về ShopFashion</li>
-              <li>Câu chuyện ShopFashion</li>
-              <li>Về Tập Đoàn Shop</li>
+              <li>Về ITShop</li>
+              <li>Câu chuyện ITShop</li>
+              <li>Về ITShop</li>
               <li>Liên hệ</li>
             </ul>
           </div>
