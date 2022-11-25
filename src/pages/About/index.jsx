@@ -35,10 +35,7 @@ function About() {
               }}
             >
               {' '}
-              Lorem ipsum dolor sit, amet magni, nostrum blanditiis nisi
-              numquam, dolorum eius alias unde incidunt! Consectetur laboriosam
-              facilis fugit totam ad dolores cumque, sit beatae aut voluptates,
-              eos tempore.
+             
             </div>
             <div
               style={{
