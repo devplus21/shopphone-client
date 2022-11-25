@@ -5,24 +5,27 @@ import './styles.scss';
 
 const Footer = () => {
   return (
-    <footer className='footer'>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-md-6'>
-            <div className='logo' style={{ color: '#fff', fontSize: '20px', fontWeight: '900' }}>
-              ShopFashion
+    <footer className="footer">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <div
+              className="logo"
+              style={{ color: '#fff', fontSize: '20px', fontWeight: '900' }}
+            >
+              ITShop
             </div>
             <br />
-            <p className='font'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore illo fugit provident mollitia quia nihil
-              ab dolor numquam voluptatibus necessitatibus eos harum, perferendis, eius voluptates recusandae sapiente
-              culpa dolore ullam?
+            <p className="font">
+              Mong muốn cung cấp dịch vụ tốt nhất đến mọi người trên 
+              thị trường với giá cả và dịch vụ bảo hành tốt nhất
             </p>
           </div>
-          <div className='col-md-6'>
-            <h4 className='font'>Nhận tin mới từ ShopFashion</h4>
-            <p className='font'>
-              Đăng kí ngay để nhận thông tin mới nhất về khuyến mãi, sự kiện, offer... từ ShopMobile.
+          <div className="col-md-6">
+            <h4 className="font">Nhận tin mới từ ITShop</h4>
+            <p className="font">
+              Đăng kí ngay để nhận thông tin mới nhất về khuyến mãi, sự kiện,
+              offer... từ ITShop.
             </p>
             <Input.Group compact>
               <Input size='large' style={{ width: 'calc(100% - 200px)' }} placeholder='Email' />
@@ -32,13 +35,13 @@ const Footer = () => {
             </Input.Group>
           </div>
         </div>
-        <div className='row mt-5'>
-          <div className='col-md-3'>
-            <h5 className='fw-bold font'>GIỚI THIỆU</h5>
-            <ul className='font'>
-              <li>Về ShopMobile</li>
-              <li>Câu chuyện ShopMobile</li>
-              <li>Về Tập Đoàn Shop</li>
+        <div className="row mt-5">
+          <div className="col-md-3">
+            <h5 className="fw-bold font">GIỚI THIỆU</h5>
+            <ul className="font">
+              <li>Về ITShop</li>
+              <li>Câu chuyện ITShop</li>
+              <li>Về ITShop</li>
               <li>Liên hệ</li>
             </ul>
           </div>

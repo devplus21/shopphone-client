@@ -41,13 +41,13 @@ const items = [
       <ProfileOutlined />,
     ),
     getItem(
-      <Link to="/admin/product">Thêm sản phầm</Link>,
+      <Link to="/admin/product">Thêm sản phẩm</Link>,
       'newProduct',
       <FileAddOutlined />,
     ),
   ]),
   getItem('Loại sản phẩm', 'sub1', <GoldOutlined />, [
-    getItem(
+    getItem(  
       <Link to="/admin/categories">Loại sản phẩm</Link>,
       '3',
       <GoldOutlined />,

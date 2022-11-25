@@ -119,14 +119,14 @@ function Contact() {
                 <p>
                   <strong>
                     {' '}
-                    450-451 Lê Văn Việt, Phường Tăng Nhơn Phú A, Tp. Thủ Đức (Quận 9 cũ), TP. Hồ Chí Minh
+                    451 Lê Văn Việt, Quận 9, Thành phố HCM
                   </strong>
                 </p>
               </li>
               <li>
                 <p>Email của chúng tôi</p>
                 <p>
-                  <strong>shopmobile@st.utc2.edu.vn</strong>
+                  <strong>ITShop@utc2.edu.vn</strong>
                 </p>
               </li>
               <li>
@@ -138,7 +138,7 @@ function Contact() {
               <li>
                 <p>Thời gian làm việc</p>
                 <p>
-                  <strong>Thứ 2 đến Thứ 6 Hoạt động từ 09:00 đến 20:00</strong>
+                  <strong>Thứ 2 đến CN Hoạt động từ 09:00 đến 20:00</strong>
                 </p>
               </li>
             </ul>
