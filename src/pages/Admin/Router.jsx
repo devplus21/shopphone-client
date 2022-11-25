@@ -8,7 +8,7 @@ import NewDiscount from './NewDiscount';
 import NewProduct from './NewProduct';
 import OrderProcess from './OrderProcess';
 import Orders from './Orders';
-import ProductReviews from './ProductReviews';
+// import ProductReviews from './ProductReviews';
 import Products from './Products';
 import UpdateCategory from './UpdateCategory';
 import UpdateDiscount from './UpdateDiscount';
