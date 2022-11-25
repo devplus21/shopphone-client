@@ -39,7 +39,7 @@ const Footer = () => {
                 style={{ width: 'calc(100% - 200px)' }}
                 placeholder="Email"
               />
-              <Button size="large">Gửi</Button>
+              <Button className='button' size="large">Gửi</Button>
             </Input.Group>
           </div>
         </div>
@@ -67,7 +67,7 @@ const Footer = () => {
             <ul className="font">
               <li>Hồ Chí Minh</li>
               <li>Hải Phòng</li>
-              <li>Đã Nẵng</li>
+              <li>Đà Nẵng</li>
               <li>Hà Nội</li>
             </ul>
           </div>
