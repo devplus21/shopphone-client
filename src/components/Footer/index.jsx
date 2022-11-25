@@ -14,8 +14,9 @@ const Footer = () => {
             </div>
             <br />
             <p className='font'>
-              Hướng đến mục tiêu mang lại niềm vui ăn mặc mới mỗi ngày cho hàng triệu người tiêu dùng Việt. Hãy cùng
-              Yolo hướng đến một cuộc sống năng động, tích cực hơn.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore illo fugit provident mollitia quia nihil
+              ab dolor numquam voluptatibus necessitatibus eos harum, perferendis, eius voluptates recusandae sapiente
+              culpa dolore ullam?
             </p>
           </div>
           <div className='col-md-6'>

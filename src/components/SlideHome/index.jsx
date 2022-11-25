@@ -18,55 +18,38 @@ function SlideHome() {
     autoplaySpeed: 2000,
   };
   return (
-    <div className="SlideHomeContainer container">
-      <div className="row">
-        <div className="col-md-4 SlideHome_Right">
-          <div className="ci-m66-feature-teaser-container">
-            <h2 className="ci-m66-feature-title">Polo Nam Pima cao cấp </h2>
-            <div className="ci-m66-feature-intro-text">
-              <span className="ci-richtext ci-richtext-text-alignment-left">
+    <div className='SlideHomeContainer container'>
+      <div className='row'>
+        <div className='col-md-4 SlideHome_Right'>
+          <div className='ci-m66-feature-teaser-container'>
+            <h2 className='ci-m66-feature-title'>Polo Nam Pima cao cấp </h2>
+            <div className='ci-m66-feature-intro-text'>
+              <span className='ci-richtext ci-richtext-text-alignment-left'>
                 <p>
-                  Nhắc đến sự đẳng cấp là không thể không nhắc đến dòng vải
-                  pima. Nó tạo nên chất lượng tốt nhất cho bất kỳ sản phẩm thời
-                  trang nào. Sợi vải pima dài và dày hơn sợi cotton thông thường
-                  gấp đôi nhờ công nghệ dệt tân tiến.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aliquid exercitationem, nobis dignissimos
+                  odio mollitia nihil ab commodi illo veritatis, maiores a autem ipsa dolore? Sint harum fugit est
+                  illum.
                 </p>{' '}
               </span>
             </div>
-            <div className="btn" style={{ padding: '17px 72px' }}>
-              TOP MOTHER'S DAY GIFTS
+            <div className='btn' style={{ padding: '17px 72px' }}>
+              TOP BLACK FRIDAY GIFTS
             </div>
           </div>
         </div>
-        <div className="col-md-8 slider-home">
+        <div className='col-md-8 slider-home'>
           <Slider {...settings}>
             <div>
-              <img
-                src={banner01}
-                alt="First slide"
-                style={{ borderRadius: '50px' }}
-              />
+              <img src={banner01} alt='First slide' style={{ borderRadius: '50px' }} />
             </div>
             <div>
-              <img
-                src={banner02}
-                alt="Second slide"
-                style={{ borderRadius: '50px' }}
-              />
+              <img src={banner02} alt='Second slide' style={{ borderRadius: '50px' }} />
             </div>
             <div>
-              <img
-                src={banner03}
-                alt="Second slide"
-                style={{ borderRadius: '50px' }}
-              />
+              <img src={banner03} alt='Second slide' style={{ borderRadius: '50px' }} />
             </div>
             <div>
-              <img
-                src={banner04}
-                alt="Second slide"
-                style={{ borderRadius: '50px' }}
-              />
+              <img src={banner04} alt='Second slide' style={{ borderRadius: '50px' }} />
             </div>
           </Slider>
         </div>
