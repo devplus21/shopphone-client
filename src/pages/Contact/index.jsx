@@ -133,15 +133,14 @@ function Contact() {
                 <p>
                   <strong>
                     {' '}
-                    Văn phòng Pandora Online Tầng L1 , 11-13 Huỳnh Thúc Kháng,
-                    Phường Bến Nghé, Quận 1, TP.Hồ Chí Minh, Việt Nam.
+                    451 Lê Văn Việt, Quận 9, Thành phố HCM
                   </strong>
                 </p>
               </li>
               <li>
                 <p>Email chúng tôi</p>
                 <p>
-                  <strong>pandoraonline@norbreeze.com</strong>
+                  <strong>ITShop@utc2.edu.vn</strong>
                 </p>
               </li>
               <li>
@@ -153,7 +152,7 @@ function Contact() {
               <li>
                 <p>Thời gian làm việc</p>
                 <p>
-                  <strong>Thứ 2 đến Thứ 6 Hoạt động từ 09:00 đến 20:00</strong>
+                  <strong>Thứ 2 đến CN Hoạt động từ 09:00 đến 20:00</strong>
                 </p>
               </li>
             </ul>
