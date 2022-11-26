@@ -30,24 +30,17 @@ function Contact() {
     };
 
     const title = value ? (
-      <span className="numeric-input-title">
-        {value !== '-' ? formatNumber(Number(value)) : '-'}
-      </span>
+      <span className='numeric-input-title'>{value !== '-' ? formatNumber(Number(value)) : '-'}</span>
     ) : (
       'Input a number'
     );
     return (
-      <Tooltip
-        trigger={['focus']}
-        title={title}
-        placement="topLeft"
-        overlayClassName="numeric-input"
-      >
+      <Tooltip trigger={['focus']} title={title} placement='topLeft' overlayClassName='numeric-input'>
         <Input
           {...props}
           onChange={handleChange}
           onBlur={handleBlur}
-          placeholder="Số điện thoại của bạn"
+          placeholder='Số điện thoại của bạn'
           maxLength={25}
         />
       </Tooltip>
@@ -57,10 +50,7 @@ function Contact() {
 
   const { TextArea } = Input;
   return (
-    <div
-      className="container contact"
-      style={{ marginTop: '70px', display: 'flex', flexDirection: 'column' }}
-    >
+    <div className='container contact' style={{ marginTop: '70px', display: 'flex', flexDirection: 'column' }}>
       <h1
         style={{
           display: 'block',
@@ -76,14 +66,14 @@ function Contact() {
       </h1>
       <Breadcrumb>
         <Breadcrumb.Item>
-          <Link to="/">Trang chủ</Link>
+          <Link to='/'>Trang chủ</Link>
         </Breadcrumb.Item>
         <Breadcrumb.Item>Liên hệ</Breadcrumb.Item>
       </Breadcrumb>
-      <div className="row">
-        <div className="col-md-6">
-          <div className="contactFormWrapper">
-            <div className="box-send-contact">
+      <div className='row'>
+        <div className='col-md-6'>
+          <div className='contactFormWrapper'>
+            <div className='box-send-contact'>
               <h2
                 style={{
                   fontWeight: '700',
@@ -93,67 +83,62 @@ function Contact() {
               >
                 Gửi thắc mắc cho chúng tôi
               </h2>
-              <div id="contactFormWrapper">
-                <div className="row" style={{ marginBottom: '10px' }}>
-                  <div className="col-md-4">
-                    <Input placeholder="Tên của bạn" className=".ant-input" />
+              <div id='contactFormWrapper'>
+                <div className='row' style={{ marginBottom: '10px' }}>
+                  <div className='col-md-4'>
+                    <Input placeholder='Tên của bạn' className='.ant-input' />
                   </div>
-                  <div className="col-md-4">
-                    <Input placeholder="Email của bạn" className=".ant-input" />
+                  <div className='col-md-4'>
+                    <Input placeholder='Email của bạn' className='.ant-input' />
                   </div>
-                  <div className="col-md-4">
+                  <div className='col-md-4'>
                     <NumericInput
                       style={{
                         width: '100%',
                       }}
                       value={value}
                       onChange={setValue}
-                      className=".ant-input"
+                      className='.ant-input'
                     />
                   </div>
                 </div>
-                <TextArea
-                  rows={4}
-                  placeholder="Nội dung"
-                  style={{ marginBottom: '15px' }}
-                />
+                <TextArea rows={6} placeholder='Nội dung' style={{ marginBottom: '15px' }} />
 
-                <button className="btn" style={{ padding: '20px 85px' }}>
+                <button className='btn' style={{ padding: '20px 85px' }}>
                   Gửi cho chúng tôi
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-md-6">
-          <div className="box-info-contact">
-            <ul className="list-info">
+        <div className='col-md-6'>
+          <div className='box-info-contact'>
+            <ul className='list-info'>
               <li>
-                <p>Địa chỉ chúng tôi</p>
+                <p>Địa chỉ của chúng tôi</p>
                 <p>
                   <strong>
                     {' '}
-                    Văn phòng Pandora Online Tầng L1 , 11-13 Huỳnh Thúc Kháng,
-                    Phường Bến Nghé, Quận 1, TP.Hồ Chí Minh, Việt Nam.
+                    451 Lê Văn Việt, Quận 9, Thành phố HCM
                   </strong>
                 </p>
               </li>
               <li>
-                <p>Email chúng tôi</p>
+                <p>Email của chúng tôi</p>
                 <p>
-                  <strong>pandoraonline@norbreeze.com</strong>
+                  <strong>ITShop@utc2.edu.vn</strong>
                 </p>
               </li>
               <li>
                 <p>Điện thoại</p>
                 <p>
-                  <strong>1900 299 998</strong>
+                  <strong>(028) 3896 6798</strong>
                 </p>
               </li>
               <li>
                 <p>Thời gian làm việc</p>
                 <p>
-                  <strong>Thứ 2 đến Thứ 6 Hoạt động từ 09:00 đến 20:00</strong>
+                  <strong>Thứ 2 đến CN Hoạt động từ 09:00 đến 20:00</strong>
                 </p>
               </li>
             </ul>

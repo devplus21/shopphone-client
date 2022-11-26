@@ -9,7 +9,7 @@ function ListCategory() {
       <div className="row">
         <div className="col-md-3">
           <div className="text-tit">
-            <h2>Khám phá thế giới trang sức tuyệt mỹ</h2>
+            <h2>Khám phá thế giới di động cực đỉnh</h2>
           </div>
         </div>
         <div className="col-md-9 ">
