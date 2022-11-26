@@ -35,8 +35,6 @@ function About() {
               }}
             >
               {' '}
-              Chúng tôi cam kết đưa ra sản phẩm với giá cả tốt nhất và chất lượng tốt nhất. Cùng với chế độ 
-              bảo hành tốt và tặng kèm nhiều quà tặng khác. Chắc chắn sẽ không làm bạn thất vọng. ITSHOP hy vọng đồng hành cùng bạn. Xin cảm ơn!
             </div>
             <div
               style={{

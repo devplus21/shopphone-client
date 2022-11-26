@@ -33,7 +33,7 @@ const Products = () => {
     }
 
     if (isDeleted) {
-      message.success('Xoá sản phẩm thành công!');
+      message.success('Đã xóa sản phẩm!');
       navigate('/admin');
       dispatch({ type: DELETE_PRODUCT_RESET });
     }
