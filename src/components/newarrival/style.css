@@ -1,0 +1,19 @@
+.heading img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.newarrival h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+.newarrival span {
+    color: #fd9500;
+    font-size: 20px;
+    font-weight: bold;
+}
+.newarrival .box img {
+    display: block;
+    margin: auto;
+    padding: 20px 10px;
+}
