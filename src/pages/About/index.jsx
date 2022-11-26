@@ -35,7 +35,7 @@ function About() {
               }}
             >
               {' '}
-             
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, reiciendis possimus eaque beatae quas odio tempore? Sequi, voluptatem. Cupiditate, rerum.
             </div>
             <div
               style={{
