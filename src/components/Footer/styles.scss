@@ -1,0 +1,41 @@
+.footer {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #fd9500;
+
+  .ant-input:hover {
+    border-color: #000;
+  }
+
+  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    border-color: #000;
+    border-right-width: 1px;
+    z-index: 1;
+  }
+
+  .ant-btn:focus,
+  .ant-btn:hover {
+    color: #000;
+    border-color: #000;
+  }
+
+  .ant-btn {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+  
+  .font {
+    color: #fff;
+  }
+
+  .font li{
+    cursor: pointer;
+  }
+
+  .font li:hover {
+    opacity: 0.8;
+  }
+}
+
+
