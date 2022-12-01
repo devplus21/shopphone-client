@@ -1,29 +1,27 @@
-import React, { useEffect, useState } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
-import axios from 'axios';
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { Route, Routes, useLocation } from 'react-router-dom';
 
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import ProtectedRoute from '../components/ProtectedRoute';
+import Account from '../pages/Account';
+import Admin from '../pages/Admin';
+import Cart from '../pages/Cart';
+import Checkout from '../pages/Checkout';
+import DetailProducts from '../pages/DetailProducts';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Products from '../pages/Products';
 import Register from '../pages/Register';
-import Admin from '../pages/Admin';
-import DetailProducts from '../pages/DetailProducts';
-import Account from '../pages/Account';
-import Cart from '../pages/Cart';
-import ForgotPassword from '../pages/ForgotPassword';
-import ResetPassword from '../pages/ResetPassword';
-import ProtectedRoute from '../components/ProtectedRoute';
-import Checkout from '../pages/Checkout';
+import Verify from '../pages/Verify';
 import { loadUser } from '../redux/actions/userAction';
 
-import Success from '../pages/Checkout/Success';
-import Order from '../pages/Order';
-import Contact from '../pages/Contact';
 import About from '../pages/About';
+import Success from '../pages/Checkout/Success';
+import Contact from '../pages/Contact';
 import Map from '../pages/Map';
+import Order from '../pages/Order';
 
 const Router = () => {
   let location = useLocation();
@@ -49,21 +47,22 @@ const Router = () => {
     <>
       {RenderHeader(!location.pathname.includes('admin'))}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/password/forgot" element={<ForgotPassword />} />
-        <Route path="/password/reset/:token" element={<ResetPassword />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/products/:keyword" element={<Products />} />
-        <Route path="/detailProduct/:id" element={<DetailProducts />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/map" element={<Map />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/verify/:userId/:verificationCode' element={<Verify />} />
+        {/* <Route path="/password/forgot" element={<ForgotPassword />} /> */}
+        {/* <Route path="/password/reset/:token" element={<ResetPassword />} /> */}
+        <Route path='/products' element={<Products />} />
+        <Route path='/products/:keyword' element={<Products />} />
+        <Route path='/detailProduct/:id' element={<DetailProducts />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/map' element={<Map />} />
 
         <Route
-          path="/admin/*"
+          path='/admin/*'
           element={
             <ProtectedRoute isAdmin={true}>
               <Admin />
@@ -72,7 +71,7 @@ const Router = () => {
         />
 
         <Route
-          path="/account/*"
+          path='/account/*'
           element={
             <ProtectedRoute>
               <Account />
@@ -81,7 +80,7 @@ const Router = () => {
         />
 
         <Route
-          path="/checkout"
+          path='/checkout'
           element={
             <ProtectedRoute>
               <Checkout />
@@ -89,7 +88,7 @@ const Router = () => {
           }
         />
         <Route
-          path="/order/:id"
+          path='/order/:id'
           element={
             <ProtectedRoute>
               <Order />
@@ -98,7 +97,7 @@ const Router = () => {
         />
 
         <Route
-          path="/checkout/success"
+          path='/checkout/success'
           element={
             <ProtectedRoute>
               <Success />
