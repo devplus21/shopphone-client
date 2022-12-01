@@ -41,7 +41,9 @@ import {
   CLEAR_ERRORS,
 } from '../types/userTypes';
 
-export const userReducer = (state = { user: {} }, action) => {
+const initialState = { user: {}, loading: false, isAuthenticated: false, error: undefined };
+
+export const userReducer = (state = initialState, action) => {
   switch (action.type) {
     case LOGIN_REQUEST:
     case REGISTER_USER_REQUEST:

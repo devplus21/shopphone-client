@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Input, Button, message, Spin } from 'antd';
-import './styles.scss';
 import { LockOutlined, MailOutlined } from '@ant-design/icons';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Input, message, Spin } from 'antd';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { clearErrors, login } from '../../redux/actions/userAction';
+import './styles.scss';
 
 const Login = () => {
   const dispatch = useDispatch();
