@@ -8,7 +8,7 @@ import {
 const policy = [
   {
     name: 'Miễn phí giao hàng',
-    description: 'Miễn phí ship với đơn hàng > 500K',
+    description: 'Miễn phí ship với đơn hàng > 239K',
     icon: ShoppingCartOutlined,
   },
   {

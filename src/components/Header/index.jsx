@@ -55,7 +55,7 @@ const Header = () => {
     <div className='header'>
       <div className='header_container container'>
         <Link to='/' className='Header_logo' style={{ color: '#fd9500', fontSize: '28px', fontWeight: '900' }}>
-          ITSHOP
+          ShopMobile
         </Link>
         <div className='d-flex list-menu'>
           {mainNav.map((item, index) => (

@@ -23,7 +23,7 @@ function About() {
                 margin: '0 auto 0 0',
               }}
             >
-              Về ITSHOP
+              Về chúng tôi
             </h1>
             <div> </div>
             <div
@@ -35,6 +35,10 @@ function About() {
               }}
             >
               {' '}
+              Lorem ipsum dolor sit, amet magni, nostrum blanditiis nisi
+              numquam, dolorum eius alias unde incidunt! Consectetur laboriosam
+              facilis fugit totam ad dolores cumque, sit beatae aut voluptates,
+              eos tempore.
             </div>
             <div
               style={{
@@ -46,7 +50,8 @@ function About() {
               }}
             >
               {' '}
-              451 Lê Văn Việt, Q9, Thành phố HCM
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae,
+              totam.
             </div>
             <div
               className="phoneNumber"
@@ -60,7 +65,7 @@ function About() {
                 style={{ marginRight: '5px ', color: '#ea8496 !important' }}
               />
               <p style={{ margin: '0', fontWeight: '700' }}>
-                +84 377429879
+                +1 (234) 567-8910
               </p>
             </div>
           </div>

@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
-import { 
-  // Doughnut,
-   Line } from 'react-chartjs-2';
+import { Doughnut, Line } from 'react-chartjs-2';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getAllOrders } from '../../../redux/actions/orderAction';
